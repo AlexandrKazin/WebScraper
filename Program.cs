@@ -1,5 +1,7 @@
 ﻿using HtmlAgilityPack;
 
+try
+{
 string url = args.Length > 0 ? args[0] : "https://example.com/news";
 using HttpClient client = new HttpClient();
 string html = await client.GetStringAsync(url);
@@ -16,4 +18,9 @@ if (titles != null)
 else
 {
     Console.WriteLine("No titles found.");
+}
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Ошибка: {ex.Message}");
 }
