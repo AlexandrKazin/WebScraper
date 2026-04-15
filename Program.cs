@@ -1,6 +1,6 @@
 ﻿using HtmlAgilityPack;
 
-string url = "https://example.com/news";
+string url = args.Length > 0 ? args[0] : "https://example.com/news";
 using HttpClient client = new HttpClient();
 string html = await client.GetStringAsync(url);
 
