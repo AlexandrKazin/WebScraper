@@ -1,0 +1,22 @@
+# Build output directories
+/bin/
+/obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+
+# .NET Core / .NET 6+ specific
+*.dbmdl
+*.cache
+*.log
+*.tmp
+
+# Environment / secrets
+.env
+appsettings.Development.json
